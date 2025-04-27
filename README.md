@@ -24,7 +24,7 @@ This repository contains a frontend e-commerce project for buying multiple items
 - Responsive design for mobile devices
 
 ## Setup Instructions
-1. Clone the repository to your local machine using `git clone https://github.com/Jindalaryan/E-Commerce-Fruit.git `.
+1. Clone the repository to your local machine using `https://github.com/Jindalaryan/E-Commerce-Fruit.git `.
 2. Open the project directory in your preferred code editor.
 3. Open `index.html` in a web browser to view the project locally.
 4. Explore the features and functionalities of the e-commerce website.
