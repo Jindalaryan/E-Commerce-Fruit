@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>E-Commerce Fruits</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-cart"></i>Tropicana</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./images/watermelon.jpg" alt="watermelon">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">₹ 20/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/mango.jpg" alt="mango">
+                <div class="content">
+                    <h3>  Mango</h3>
+                    <span class="price">₹ 100/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./images/pomegranate.jpg" alt="pomegranate">
+                <div class="content">
+                    <h3>Pomegranate</h3>
+                    <span class="price">₹ 120/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="total">
+                Total: ₹ 240/-
+            </div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        <form class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" class="box" placeholder="Email-ID">
+            <input type="password" class="box" placeholder="Password">
+            <p>Forget your Password <a href="#">Click here</a></p>
+            <p>Don't have any Account <a href="#">Create New Account</a></p>
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Taste the   <span>Freshness</span> in every bite!</h3>
+            <p>"Welcome to a world where freshness meets convenience! At <span>TROPICANA</span>, we bring you the finest, handpicked
+            fruits straight from trusted farms to your doorstep. Whether you're craving juicy mangoes, crisp apples, or exotic berries,
+            we've got your daily dose of health and happiness covered. Shop smart, eat fresh, and enjoy a sweeter, healthier lifestyle — all at your fingertips!"</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/fresh.jpg" alt="Fresh Fruits">
+                <h3>Fresh and Organic</h3>
+                <p>Freshness You Can Taste, Purity You Can Trust.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <img src="./images/delievery.jpg" alt="Delievery">
+                <h3>Free Delievery</h3>
+                <p>Bringing Nature’s Bounty to You, Free of Charge.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <img src="./images/payment.jpg" alt="Payment">
+                <h3>Easy Payment</h3>
+                <p>Flexible Payment Options for Your Convenience.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/309/405/267/fruits-grapes-wallpaper-preview.jpg" alt="grapes">
+                    <h3>Fresh Grapes</h3>
+                    <div class="price">₹50rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://img.freepik.com/premium-photo/vibrant-guava-fruits-captivating-composition-detailed-8k-photography_899449-422331.jpg" alt="guava">
+                    <h3>Fresh Guava</h3>
+                    <div class="price">₹60rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://st2.depositphotos.com/1020804/11732/i/450/depositphotos_117327128-stock-photo-mango-fruit-and-mango-cubes.jpg" alt="mango">
+                    <h3>Fresh Mangoes</h3>
+                    <div class="price">₹100rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://img.freepik.com/premium-photo/pale-green-vs-plum-high-quality-ultra-hd-8k-hdr_889056-36448.jpg" alt="mango">
+                    <h3>Fresh Plums</h3>
+                    <div class="price">₹80rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/mango.jpg" alt="mango">
+                    <h3>Fresh Mangoes</h3>
+                    <div class="price">₹50rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                
+            </div>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="https://media.istockphoto.com/id/946225356/photo/a-fresh-fruit-lychee-and-leaf-on-the-lychee-tree.jpg?s=612x612&w=0&k=20&c=Y8xNxScj8PlVPASa47h1C7IUKZ4IMTcv-WTg-HWyIuM=" alt="grapes">
+                    <h3>Fresh Lychee</h3>
+                    <div class="price">₹65rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/978/407/602/water-melons-half-ripe-cut-wallpaper-preview.jpg" alt="guava">
+                    <h3>Fresh Watermelon</h3>
+                    <div class="price">₹30rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://images.unsplash.com/photo-1643996317182-5b01f9725953?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b3JhbmdlJTIwZnJ1aXR8ZW58MHx8MHx8fDA%3D" alt="mango">
+                    <h3>Fresh Oranges</h3>
+                    <div class="price">₹60rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://images7.alphacoders.com/765/765125.jpg" alt="mango">
+                    <h3>Fresh Peachs</h3>
+                    <div class="price">₹80rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://www.onlyfoods.net/wp-content/uploads/2012/06/Kiwi-Fruit-Images.jpg" alt="mango">
+                    <h3>Fresh Kiwi </h3>
+                    <div class="price">₹110rs/kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://wallpaper.dog/large/10987462.jpg" alt="">
+                <h3>🥭 Fresh Fruits Collections</h3>
+                <h4>Seasonal Fruits, Organic Fruits, Tropical Fruits</h4>
+                <p>Upto 20% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/497413170/photo/heart-symbol-only-fruits.jpg?s=612x612&w=0&k=20&c=VIWfTJ6oZDRIYgZ3KU24g457oCzSAWoupW_os3gpj6Q=" alt="">
+                <h3>🍎 Health & Wellness Collections</h3>
+                <h4>Superfruit Selections, Sugar-Free & Low Glycemic Options</h4>
+                <p>Upto 25% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="https://img.goodfon.com/wallpaper/big/8/8e/sukhofrukty-izium-orekhi-serdtse.webp" alt="">
+                <h3>🍓 Dried & Preserved Fruits Collections</h3>
+                <h4>Dried Fruits, Fruit Preserves & Jams, Fruit Chips</h4>
+                <p>Upto 10% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3E7OMCB8F_XyUh-e05GGD8uNGA9QaQkvg4-0tPUko9jty7Ju-FVVXAIZHEVXoi1z9Lo&usqp=CAU" alt="">
+                <h3>🍍 Gift & Specialty Collections</h3>
+                <h4>Fruit Gift Baskets, Holiday Specials, Subscription Boxes</h4>
+                <p>Upto 15% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <h1 class="heading">Customer's <span>Review</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+        
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5gTArLlzanpoQq10ho0N_j8akeqm75CKCQ&s" alt="">
+                    <h2>🍎 Freshness & Quality</h2>
+                    <p>The quality is outstanding and lasts for days, not like supermarket bought. 
+                        The bread is amazing too, so fresh & incredibly tasty. Thank you for the fab service & quality you're providing.</p>
+                    <h3>Gagan Singh</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="https://img.freepik.com/premium-photo/delivery-man-art-hd-8k-wallpaper-stock-photographic-image_915071-86359.jpg" alt="">
+                    <h2>🚚 Delivery Experience</h2>
+                    <p>All delivered completely contact-free. Everything looks lovely and excellent quality. Good old-fashioned service, wonderful fruit, fantastic quality, and good people to work with. That’s all a body can ask for</p>
+                    <h3>Rupendra Singh</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="https://media.istockphoto.com/id/1215073452/photo/sports-woman-with-healthy-food-on-the-kitchen.jpg?s=612x612&w=0&k=20&c=S86NSIPcej8ED8Umv98NlNQQrSPYPblclEZJAZkkokg=" alt="">
+                    <h2>🥭 Taste & Variety</h2>
+                    <p>Delicious fruit—I always buy your peaches and plums. Always those wonderful peaches, by the half-bushel! Plus, today, perfect Bartlett pears, and a quart of childhood-memory Concord grapes.</p>
+                    <h3>Vishal Singh</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-CNUeumaHc8f_j4iAeLnNCK1NemtB4uUeA&s" alt="">
+                    <h2>🎁 Gifting & Special Occasions</h2>
+                    <p>Perfect gift! Fresh, colorful, and delicious! I sent a fruit bouquet for Mother’s Day and my mom said it was the sweetest and healthiest surprise she’s ever received.</p>
+                    <h3>Alok Sharma</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="./images/watermelon.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, reprehenderit.</p>
+                    <h3>Gaurav Bhadane</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Tropicana <i class="fas fa-shopping-cart"></i></h3>
+                <p>Freshness You Can Trust, Quality You Can Taste.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+91 6398545030</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+91 6398874596</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Categories</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Review</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For latest Updates</p>
+                <input type="email" placeholder="Enter your Email" class="email">
+                <input type="submit" value="Subscribe" class="btn">
+                <img src="./images/payment.jpg" alt="" class="image">
+            </div>
+        </div>
+        <div class="credit">
+            Created by <span>Aryan Jindal</span> | 2025 © all rights reserved |
+        </div>
+    </section>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
